@@ -1,5 +1,6 @@
 # synthesis_condition_optimizer
 This repository includes samples codes that calculate the thermodynamic competition and optimize synthesis conditions by minimizing thermodynamic competition.
+Version=1.0
 
 installation of the synthesis condition optimizer (only requires pre-install numpy) and pymatgen
 ~~~
