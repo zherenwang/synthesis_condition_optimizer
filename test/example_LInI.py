@@ -16,7 +16,7 @@ def get_target(target, entries):
 
 
 def get_V(pH):
-    return 1.653 - 0.059 * pH
+    return 1.603 - 0.0295 * pH
 
 
 if __name__ == '__main__':
@@ -30,6 +30,7 @@ if __name__ == '__main__':
     pbx_elts = list(conc_dict.keys())
     pH = 0.66
     V = get_V(pH)
+    print(V)
     print('target is ' + target)
     comp = Composition(target).as_dict()
     comp_dict = {}
@@ -43,6 +44,7 @@ if __name__ == '__main__':
 
     pd = PourbaixDiagram(entries, conc_dict=conc_dict, comp_dict=comp_dict, filter_solids=True)
     all_entries = pd._processed_entries
+    print(len(pd._unprocessed_entries))
     target_entry = get_target(target, entries)
 
     if target_entry:
@@ -50,7 +52,7 @@ if __name__ == '__main__':
         target_entries = [target_entry]
         target_id = target_entries[0].entry_id
         cvx = ConditionOptimizer(all_entries, target_entries, pbx_elts, conc_change=False, V_change=False,
-                              pH_change=False)
+                                 pH_change=False)
         cvx.clean_entries(conc_dict)
         # pH, V, conc_dict, pH_list, V_list, entry_and_energy, thermodynamic_competition = cvx.optimizer(
         #     conc_dict, V=get_V(pH), pH=pH, conc_limit=1.5, iter_max=1
