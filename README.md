@@ -1,5 +1,5 @@
 # synthesis_condition_optimizer
-This repository includes codes that calculate the thermodynamic competition and optimize synthesis conditions by minimizing thermodynamic competition.
+This repository includes samples codes that calculate the thermodynamic competition and optimize synthesis conditions by minimizing thermodynamic competition.
 Version=1.0
 
 installation of the synthesis condition optimizer (only requires pre-install numpy) and pymatgen
@@ -17,7 +17,7 @@ An example is in test/example_LInI.py
 Output (test on apple M2 chip)
 ~~~
 pH = 0.66
-redox potential = 1.61406 V
+redox potential = 1.58 V
 conc_dict is  {'Li': 1.5, 'In': 0.1, 'I': 0.8} (Unit: mol / L)
 thermodynamic competition is -0.056 eV/atom
 running time is 1 second
