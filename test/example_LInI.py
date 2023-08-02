@@ -16,7 +16,7 @@ def get_target(target, entries):
 
 
 def get_V(pH):
-    return 1.603 - 0.0295 * pH
+    return 1.626 - 0.0591 * pH
 
 
 if __name__ == '__main__':
