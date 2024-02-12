@@ -53,3 +53,15 @@ running time is 11 second
 Done!
 
 ~~~
+
+If you find the codes and data useful, please consider citing our paper:
+~~~
+
+@article{wang_2024_MTC,
+	author = {Wang, Zheren and Sun, Yingzhi and Cruse, Kevin and Zeng, Yan and Fei, Yuxing and Liu, Zexuan and Shangguan, Junyi and Byeon, Young-Woon and Jun, KyuJung and He, Tanjin and Sun, Wenhao and Ceder, Gerbrand},
+	doi = {10.1038/s44160-023-00479-0},
+	journal = {Nature Synthesis},
+	title = {Optimal thermodynamic conditions to minimize kinetic by-products in aqueous materials synthesis},
+	year = {2024}
+	}
+~~~
